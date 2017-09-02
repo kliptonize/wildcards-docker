@@ -3,5 +3,5 @@ As you need certain things to start developing on the Wildcards-base, I made a D
 
 ## How to use
 1) Clone
-2) Run init.sh
+2) Execute `bash init.sh` in Terminal of your choice
 3) Profit
