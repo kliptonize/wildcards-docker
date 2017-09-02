@@ -1,1 +1,5 @@
+# Don't commit containers
 /containers/
+
+# But do commit folder
+! /containers/.gitkeep 
