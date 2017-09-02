@@ -2,6 +2,9 @@ version: "3"
 services:
   mongo:
     image: mongo
+    build:
+      context: .
+      dockerfile: mongo/Dockerfile
     ports:
       - "27017:27017"
   nodejs:
