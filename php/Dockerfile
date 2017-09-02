@@ -17,5 +17,11 @@ RUN a2enmod rewrite
 # Copy App
 COPY containers/wildcards-cms/ /var/www/html/
 
+# Change permissions on content-containing folders
+RUN chown www-data /var/www/html/storage/
+RUN chmod -R 777 /var/www/html/storage/
+RUN chown www-data /var/www/html/assets/
+RUN chmod -R 777 /var/www/html/assets/
+
 # Expose the default port
 EXPOSE 80
